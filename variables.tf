@@ -34,7 +34,7 @@ variable "account" {
 variable "instance_size" {
   description = "ALI Instance size for the Aviatrix gateways"
   type        = string
-  default     = "t3.medium"
+  default     = "ecs.g5ne.large"
 }
 
 variable "ha_gw" {

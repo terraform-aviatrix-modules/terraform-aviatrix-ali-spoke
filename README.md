@@ -45,7 +45,7 @@ The following variables are optional:
 
 key | default | value 
 :---|:---|:---
-instance_size | t3.medium | The size of the Aviatrix spoke gateways
+instance_size | ecs.g5ne.large | The size of the Aviatrix spoke gateways
 ha_gw | true | Set to false if you only want to deploy a single Aviatrix spoke gateway
 active_mesh | true | Set to false to disable active mesh.
 prefix | true | Boolean to enable prefix name with avx-
