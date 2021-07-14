@@ -97,18 +97,6 @@ variable "included_advertised_spoke_routes" {
   default     = ""
 }
 
-variable "vpc_subnet_pairs" {
-  description = "Number of subnet pairs created in the VPC"
-  type        = number
-  default     = 2
-}
-
-variable "vpc_subnet_size" {
-  description = "Size of each subnet cidr block in bits"
-  type        = number
-  default     = 28
-}
-
 variable "private_vpc_default_route" {
   description = "Program default route in VPC private route table."
   type        = bool

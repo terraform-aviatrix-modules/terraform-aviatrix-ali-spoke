@@ -56,8 +56,6 @@ single_az_ha | true | Set to false if Controller managed Gateway HA is desired
 customized_spoke_vpc_routes | | A list of comma separated CIDRs to be customized for the spoke VPC routes. When configured, it will replace all learned routes in VPC routing tables, including RFC1918 and non-RFC1918 CIDRs. Example: 10.0.0.0/116,10.2.0.0/16
 filtered_spoke_vpc_routes | | A list of comma separated CIDRs to be filtered from the spoke VPC route table. When configured, filtering CIDR(s) or it’s subnet will be deleted from VPC routing tables as well as from spoke gateway’s routing table. Example: 10.2.0.0/116,10.3.0.0/16
 included_advertised_spoke_routes | | A list of comma separated CIDRs to be advertised to on-prem as Included CIDR List. When configured, it will replace all advertised routes from this VPC. Example: 10.4.0.0/116,10.5.0.0/16
-vpc_subnet_pairs | 2 | Number of Public/Private subnet pairs created in the VPC.
-vpc_subnet_size | 28 | Size of the Public/Private subnets in the VPC.
 enable_encrypt_volume | false | Set to true to enable EBS volume encryption for Gateway.
 customer_managed_keys | null | Customer managed key ID for EBS Volume encryption.
 private_vpc_default_route | false | Program default route in VPC private route table.
